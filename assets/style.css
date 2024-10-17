@@ -1,0 +1,294 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #e7ecf1;
+  font-family: sans-serif;
+}
+.foto-principal {
+  width: 100%;
+  height: 300px;
+}
+
+.logo {
+  width: 100px;
+  height: 100x;
+  position: relative;
+  border-radius: 50px;
+  border: 5px solid white;
+  bottom: 270px;
+  left: 150px;
+}
+
+.informacoes {
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+h3 {
+  margin-top: 30px;
+}
+
+.bi-geo-alt-fill {
+  color: black;
+}
+.p-verde {
+  color: #10b981;
+  font-size: 12px;
+}
+
+.localizacao {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.local {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.calcular-taxa {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.calculo {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px dotted rgb(73, 72, 72);
+  justify-content: space-between;
+  margin: 6px;
+}
+.entrega {
+  font-size: 14px;
+  background-color: #ffffff;
+  padding: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 150px;
+}
+.bi-chevron-right {
+  color: rgb(192, 29, 170);
+}
+
+.bi-gift {
+  background-color: rgb(192, 29, 170);
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+.presente {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+h5 {
+  font-size: 14px;
+}
+.fidelidade {
+  display: flex;
+  flex-direction: column;
+  color: #191f29;
+  gap: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  bottom: 125px;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: #1f2937;
+  background-color: #ffffff;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  left: 10px;
+  bottom: 100px;
+  text-indent: 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.pesquisar {
+  background-color: #ffffff;
+  width: 40px;
+  font-size: 22px;
+  position: relative;
+  bottom: 135px;
+  left: 350px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #1f2937;
+}
+
+h3 {
+  color: #1f2937;
+  position: relative;
+  bottom: 135px;
+  left: 15px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.img-destaque {
+  width: 100%;
+  height: 120px;
+}
+
+.p {
+  color: #1b2025;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.destaques {
+  background-color: #ffffff;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  align-items: center;
+  padding: 5px;
+  column-gap: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.mostrar-destaques {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 120px;
+  flex-wrap: nowrap;
+  width: 460px;
+  overflow-x: scroll;
+}
+
+.parte-bolos {
+  margin-top: 40px;
+}
+
+.cardapio {
+  background-color: #ffffff;
+  display: flex;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 150px;
+}
+
+.cardapio-foto {
+  width: 120px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.mostrar-cardapio {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  position: relative;
+  bottom: 110px;
+}
+
+.preco {
+  margin-top: 15px;
+}
+
+.rodape {
+  background-color: #c01daa;
+  color: white;
+  padding: 15px;
+  font-size: 14.94;
+  text-align: center;
+}
+
+.pe {
+  margin-bottom: 8px;
+}
+
+.icones {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#tamanho {
+  font-size: 25px;
+}
+/*
+.menu {
+  background-color: rgb(192, 29, 170);
+  width: 100%;
+  height: 100px;
+}
+.inicio {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 18px;
+}
+
+.bi-house-door-fill {
+  color: rgb(192, 29, 170);
+}*/
