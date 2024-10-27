@@ -8,40 +8,80 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="shortcut icon"
+      href="assets/Fotos/logo.jpeg"
+      type="image/x-icon"
+    />
     <title>Doces da Nina</title>
   </head>
   <body>
+    <nav class="menu-pc">
+      <div class="icones">
+        <i id="tamanho" class="bi bi-house-door-fill"></i>
+        <a>Início</a>
+      </div>
+
+      <div class="icones">
+        <i id="tamanho" class="bi bi-rocket-takeoff"></i>
+        <a>Promoções</a>
+      </div>
+
+      <div class="icones">
+        <i id="tamanho" class="bi bi-bag-check"></i>
+        <a>Pedidos</a>
+      </div>
+
+      <div class="icones">
+        <i id="tamanho" class="bi bi-person"></i>
+        <a>Perfil</a>
+      </div>
+    </nav>
     <img class="foto-principal" src="assets/Fotos/capa.jpeg" alt="" />
 
     <div class="informacoes">
-      <h5>Bolos da Nina</h5>
+      <p class="p-verde"><b>Aberto até as 22:45</b></p>
       <div class="localizacao">
         <div class="local">
           <i class="bi bi-geo-alt-fill"></i>
           <p>Jacobina - BA</p>
         </div>
         <div class="infor">
-          <a href="#">• Mais informações</a>
+          <a class="mais-infor" href="#"><b>• Mais informações</b></a>
         </div>
       </div>
-
-      <p class="p-verde"><b>Aberto até as 22:45</b></p>
+      <h5 class="nome-site">Bolos da Nina</h5>
     </div>
     <img class="logo" src="assets/Fotos/logo.jpeg" alt="" />
 
     <div class="entrega">
       <div class="calculo">
         <div class="calcular-taxa">
-          <i class="bi bi-pin-map-fill"></i>
+          <i class="bi bi-question-diamond"></i>
           <p>Calcular taxa de entrega</p>
         </div>
         <i class="bi bi-chevron-right"></i>
       </div>
-      <p>
-        <b style="color: green">Entega grátis</b> em pedidos a partr de R$
-        120,00
+      <p id="frete">
+        <b style="color: green">Entega grátis</b>
+        <b>em pedidos a partr de R$ 120,00</b>
       </p>
+      <div class="sacola">
+        <i class="bi bi-cart2"></i>
+        <p>Carrinho vazio</p>
+      </div>
+
+      <div class="cupom">
+        <i class="bi bi-ticket-perforated"></i>
+        <div class="tem-cupom">
+          <p id="cp"><b>Tem um cupom?</b></p>
+          <p>Clique e insira o código</p>
+        </div>
+        <i class="chevron bi bi-chevron-right"></i>
+      </div>
+      <button id="situacao">Estabelecimento fechado</button>
     </div>
+
     <div class="fidelidade">
       <div class="presente">
         <i class="bi bi-gift"></i>
@@ -60,8 +100,10 @@
     </div>
     <div class="pesquisar">
       <i class="bi bi-search"></i>
+      <p class="buscar">Busce por um produto</p>
     </div>
-    <h3>Destaques</h3>
+
+    <h3 class="site-destaque">Destaques</h3>
     <div class="mostrar-destaques">
       <div class="destaques">
         <div class="descricao-pratos">
@@ -101,7 +143,7 @@
     </div>
 
     <h3 class="parte-bolos">Bolos recheados</h3>
-    <div class="mostrar-cardapio">
+    <div class="bolos-recheados mostrar-cardapio">
       <div class="cardapio">
         <div class="descricao">
           <p class="p"><b>Brigadeiros</b></p>
@@ -222,8 +264,8 @@
       </div>
     </div>
 
-    <h3 class="parte-bolos">Doces e salgados</h3>
-    <div class="mostrar-cardapio">
+    <h3 class="title-doces parte-bolos">Doces e salgados</h3>
+    <div class="doces-salgados mostrar-cardapio">
       <div class="cardapio">
         <div class="descricao">
           <p class="p"><b>Brigadeiro Ninho</b></p>
@@ -328,9 +370,11 @@
     </div>
 
     <footer class="rodape">
-      <p class="pe">Doces da Nina - 2024. Todos os direitos reservados</p>
-      <p>Rua da Matriz, Praça Castro Alves, 56,</p>
-      <p>Jacobina/Bahia | (74) 91538-2752</p>
+      <p class="pe">Doces da Nina - 2024. Desenvolvido por Mirele Oliveira.</p>
+      <div alinhar-rodape>
+        <span>Rua da Matriz, Praça Castro Alves, 56,</span>
+        <span>Jacobina/Bahia | (74) 91538-2752</span>
+      </div>
     </footer>
 
     <nav class="menu">

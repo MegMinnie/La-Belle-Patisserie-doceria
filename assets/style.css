@@ -22,22 +22,24 @@ body {
   position: relative;
   border-radius: 50px;
   border: 5px solid white;
-  bottom: 270px;
-  left: 150px;
+  bottom: 260px;
+  left: 200px;
 }
 
 .informacoes {
   background-color: #ffffff;
   border-radius: 15px;
   position: relative;
-  bottom: 70px;
+  bottom: 60px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  order: 2;
   gap: 10px;
   color: black;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  padding-top: 50px;
 }
 
 a {
@@ -60,6 +62,7 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 14px;
+  color: #222c3a;
 }
 
 .local {
@@ -72,6 +75,16 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  margin-bottom: 3px;
+  padding: 10px;
+}
+
+.conteudo-fixo {
+  display: none;
+}
+#frete {
+  padding: 10px;
+  border-bottom: 1px dotted rgb(73, 72, 72);
 }
 
 .calculo {
@@ -84,15 +97,28 @@ h3 {
 .entrega {
   font-size: 14px;
   background-color: #ffffff;
-  padding: 30px;
+  padding: 0px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 10px;
   position: relative;
   bottom: 150px;
 }
+
+.sacola {
+  display: none;
+}
+
+#situacao {
+  display: none;
+}
+.bi-question-diamond {
+  font-size: 16px;
+}
 .bi-chevron-right {
   color: rgb(192, 29, 170);
+  position: relative;
+  top: 15px;
 }
 
 .bi-gift {
@@ -126,6 +152,11 @@ h5 {
   position: relative;
   padding: 10px;
   bottom: 125px;
+  border: 1px solid #e0e0e0;
+}
+
+.cupom {
+  display: none;
 }
 
 .categorias {
@@ -145,6 +176,7 @@ h5 {
   text-indent: 5px;
   font-weight: 600;
   font-size: 14px;
+  border: 1px solid #e0e0e0;
 }
 
 .pesquisar {
@@ -158,6 +190,11 @@ h5 {
   padding: 5px;
   text-align: center;
   color: #1f2937;
+  border: 1px solid #e0e0e0;
+}
+
+.buscar {
+  display: none;
 }
 
 h3 {
@@ -185,10 +222,8 @@ h5 {
 
 .destaques {
   background-color: #ffffff;
-  width: 100px;
   display: flex;
   flex-direction: row;
-  width: 150px;
   align-items: center;
   padding: 5px;
   column-gap: 10px;
@@ -205,7 +240,6 @@ h5 {
   bottom: 120px;
   flex-wrap: nowrap;
   width: 460px;
-  overflow-x: scroll;
 }
 
 .parte-bolos {
@@ -220,7 +254,8 @@ h5 {
   border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  height: 150px;
+
+  height: 160px;
 }
 
 .cardapio-foto {
@@ -270,25 +305,275 @@ h5 {
 #tamanho {
   font-size: 25px;
 }
-/*
-.menu {
-  background-color: rgb(192, 29, 170);
-  width: 100%;
-  height: 100px;
-}
-.inicio {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  width: 100px;
-  height: 40px;
-  border-radius: 8px;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  font-size: 18px;
+
+.menu-pc {
+  display: none;
 }
 
-.bi-house-door-fill {
-  color: rgb(192, 29, 170);
-}*/
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+    margin: 0% auto;
+  }
+  .menu {
+    display: none;
+  }
+
+  .menu-pc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #c01daa;
+    padding-bottom: 160px;
+  }
+
+  .icones {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    color: #ffffff;
+  }
+  a {
+    color: #ffffff;
+  }
+
+  .foto-principal {
+    width: 90%;
+    align-self: center;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    bottom: 130px;
+    border: 5px solid white;
+    border-radius: 15px;
+  }
+
+  .logo {
+    width: 175px;
+    height: 175px;
+    position: relative;
+    border-radius: 1px;
+    border: 10px solid white;
+    bottom: 320px;
+    left: 150px;
+  }
+
+  .informacoes {
+    background-color: #e7ecf1;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mais-infor {
+    color: black;
+  }
+
+  .localizacao {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 60px;
+    left: 45px;
+    color: #222833;
+  }
+
+  .p-verde {
+    position: relative;
+    bottom: 60px;
+    font-size: 14px;
+    left: 40px;
+  }
+  .nome-site {
+    font-size: 32px;
+    position: relative;
+    right: 455px;
+    bottom: 100px;
+    color: #151c25;
+  }
+
+  .fidelidade {
+    width: 350px;
+    position: relative;
+    left: 940px;
+    bottom: 750px;
+  }
+
+  .categorias {
+    position: relative;
+    bottom: 790px;
+    left: 70px;
+    font-weight: bold;
+  }
+
+  .pesquisar {
+    position: relative;
+    bottom: 830px;
+    left: 665px;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 40px;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: end;
+    font-weight: bolder;
+  }
+
+  .buscar {
+    font-size: 14px;
+    display: inline;
+  }
+
+  h3 {
+    position: relative;
+    bottom: 570px;
+    left: 70px;
+  }
+
+  .entrega {
+    background-attachment: fixed;
+    position: none;
+    bottom: 220px;
+    width: 350px;
+    left: 940px;
+    font-size: 11px;
+    color: #3b424b;
+    align-items: center;
+    text-align: center;
+  }
+
+  .calcular-taxa {
+    font-size: 12px;
+    font-weight: bolder;
+    align-items: center;
+  }
+
+  .sacola {
+    display: inline;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 8px;
+    margin: 0%;
+    padding-bottom: 30px;
+  }
+
+  .bi-cart2 {
+    font-size: 80px;
+    color: #4b535e;
+  }
+  .cupom {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-bottom: 8px;
+    font-size: 13px;
+    border-bottom: 1px dotted rgb(73, 72, 72);
+    border-top: 1px dotted rgb(73, 72, 72);
+    padding-left: 15px;
+    padding-top: 8px;
+    gap: 10px;
+  }
+
+  .tem-cupom {
+    display: flex;
+    flex-direction: column;
+  }
+  .bi-ticket-perforated {
+    font-size: 24px;
+  }
+
+  .ver-cupom {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+  }
+
+  .chevron {
+    font-size: 15px;
+    position: relative;
+    bottom: 280px;
+    left: 110px;
+  }
+
+  .bi-chevron-right {
+    font-size: 15px;
+  }
+
+  .site-destaque {
+    position: relative;
+    bottom: 810px;
+    font-size: 22px;
+  }
+
+  .mostrar-destaques {
+    position: relative;
+    bottom: 785px;
+    margin-left: 40px;
+  }
+
+  .descricao-pratos {
+    width: 270px;
+    height: 330px;
+  }
+
+  .img-destaque {
+    height: 215px;
+  }
+
+  #situacao {
+    background-color: #c01daa;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline;
+  }
+
+  .parte-bolos {
+    margin-top: -170px;
+  }
+
+  .bolos-recheados {
+    margin-top: -430px;
+  }
+
+  .doces-salgados {
+    margin-top: -430px;
+  }
+  .title-doces {
+    margin-top: 500px;
+  }
+
+  .mostrar-cardapio {
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    display: grid;
+    width: 920px;
+    padding-left: 30px;
+  }
+
+  .alinhar-rodape {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+}
