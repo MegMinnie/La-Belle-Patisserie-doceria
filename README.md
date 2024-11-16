@@ -1,1 +1,1 @@
-Desingn de uma doceria - Versão Mobile
+Desingn de uma doceria - Versão mobile e desktop.
