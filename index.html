@@ -3,400 +3,523 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <title>La Belle Pâtisserie</title>
+    <script defer src="assets/Fotos/app.js"></script>
+    <link
+      rel="shortcut icon"
+      href="assets/Fotos/logo-i.jpeg"
+      type="image/x-icon"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link
-      rel="shortcut icon"
-      href="assets/Fotos/logo.jpeg"
-      type="image/x-icon"
-    />
-    <title>Doces da Nina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+        corePlugins: {
+          preflight: true,
+        },
+      };
+    </script>
   </head>
-  <body>
-    <nav class="menu-pc">
-      <div class="icones">
-        <i id="tamanho" class="bi bi-house-door-fill"></i>
-        <a>Início</a>
-      </div>
-
-      <div class="icones">
-        <i id="tamanho" class="bi bi-rocket-takeoff"></i>
-        <a>Promoções</a>
-      </div>
-
-      <div class="icones">
-        <i id="tamanho" class="bi bi-bag-check"></i>
-        <a>Pedidos</a>
-      </div>
-
-      <div class="icones">
-        <i id="tamanho" class="bi bi-person"></i>
-        <a>Perfil</a>
-      </div>
-    </nav>
-    <img class="foto-principal" src="assets/Fotos/capa.jpeg" alt="" />
-
-    <div class="informacoes">
-      <p class="p-verde"><b>Aberto até as 22:45</b></p>
-      <div class="localizacao">
-        <div class="local">
-          <i class="bi bi-geo-alt-fill"></i>
-          <p>Jacobina - BA</p>
-        </div>
-        <div class="infor">
-          <a class="mais-infor" href="#"><b>• Mais informações</b></a>
-        </div>
-      </div>
-      <h5 class="nome-site">Bolos da Nina</h5>
-    </div>
-    <img class="logo" src="assets/Fotos/logo.jpeg" alt="" />
-
-    <div class="entrega">
-      <div class="calculo">
-        <div class="calcular-taxa">
-          <i class="bi bi-question-diamond"></i>
-          <p>Calcular taxa de entrega</p>
-        </div>
-        <i class="bi bi-chevron-right"></i>
-      </div>
-      <p id="frete">
-        <b style="color: green">Entega grátis</b>
-        <b>em pedidos a partr de R$ 120,00</b>
-      </p>
-      <div class="sacola">
-        <i class="bi bi-cart2"></i>
-        <p>Carrinho vazio</p>
-      </div>
-
-      <div class="cupom">
-        <i class="bi bi-ticket-perforated"></i>
-        <div class="tem-cupom">
-          <p id="cp"><b>Tem um cupom?</b></p>
-          <p>Clique e insira o código</p>
-        </div>
-        <i class="chevron bi bi-chevron-right"></i>
-      </div>
-      <button id="situacao">Estabelecimento fechado</button>
-    </div>
-
-    <div class="fidelidade">
-      <div class="presente">
-        <i class="bi bi-gift"></i>
-        <h5>Programa de fidelidade</h5>
-      </div>
-      <p>
-        A cada <b>R$ 1,00</b> em compras você ganha <b>1 ponto</b> que pode ser
-        trocado por prêmios.
-      </p>
-      <p>Os novos clientes ganham automaticamente <b>10 pontos.</b></p>
-    </div>
-
-    <div class="categorias">
-      <p>Lista de categorias</p>
-      <i class="bi bi-chevron-down"></i>
-    </div>
-    <div class="pesquisar">
-      <i class="bi bi-search"></i>
-      <p class="buscar">Busce por um produto</p>
-    </div>
-
-    <h3 class="site-destaque">Destaques</h3>
-    <div class="mostrar-destaques">
-      <div class="destaques">
-        <div class="descricao-pratos">
-          <img class="img-destaque" src="assets/Fotos/Pistache.jpeg" alt="" />
-
-          <h5 class="p">Bolo de Pistache</h5>
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-          </p>
-          <p class="p preco"><b>R$ 21,90</b></p>
-        </div>
-      </div>
-
-      <div class="destaques">
-        <div class="descricao-pratos">
-          <img class="img-destaque" src="assets/Fotos/Pistache.jpeg" alt="" />
-
-          <h5 class="p">Bolo de Pistache</h5>
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-          </p>
-          <p class="p preco"><b>R$ 21,90</b></p>
-        </div>
-      </div>
-
-      <div class="destaques">
-        <div class="descricao-pratos">
-          <img class="img-destaque" src="assets/Fotos/Pistache.jpeg" alt="" />
-
-          <h5 class="p">Bolo de Pistache</h5>
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-          </p>
-          <p class="p preco"><b>R$ 21,90</b></p>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="parte-bolos">Bolos recheados</h3>
-    <div class="bolos-recheados mostrar-cardapio">
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiros</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <p class="p preco"><b>R$ 59,90</b></p>
-        </div>
-        <div class="foto-doce"></div>
+  <body class="bg-[#e7ecf1] text-gray-900">
+    <header class="relative md:flex md:flex-col">
+      <nav class="hidden md:flex md:absolute md:w-full">
+        <ul
+          class="bg-[#ee4872] flex justify-around p-4 text-xl font-bold text-white mx-auto w-full pb-[160px]"
+        >
+          <li class="flex gap-3 items-center">
+            <i class="bi bi-house-door-fill text-2xl"></i>
+            <a>Início</a>
+          </li>
+          <li class="flex gap-3 items-center">
+            <i class="bi bi-rocket-takeoff text-2xl"></i>
+            <a>Promoções</a>
+          </li>
+          <li class="flex gap-3 items-center">
+            <i class="bi bi-bag-check text-2xl"></i>
+            <a>Pedidos</a>
+          </li>
+          <li class="flex gap-3 items-center">
+            <i class="bi bi-person text-2xl"></i>
+            <a>Perfil</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="md:flex md:flex-col md:absolute md:w-full md:-translate-y-1 md:mt-[5%]"
+      >
         <img
-          class="cardapio-foto"
-          src="assets/Fotos/bolo-brigadeiro.png"
-          alt="bolo de brigadeiro"
+          src="assets/Fotos/capa-i.jpg"
+          class="w-full h-[350px] md:w-[90%] md:mx-auto md:border-4 md:border-white md:rounded-[10px] lg:w-[85%] lg:h-[400px]"
         />
-      </div>
-
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiros</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <p class="p preco"><b>R$ 59,90</b></p>
+        <div
+          class="flex flex-col items-center gap-1 p-5 rounded-[20px] absolute -translate-y-1/2 top-[112%] w-full bg-white pt-[50px] border border-gray-300 md:mt-[2%] md:bg-transparent md:border-none md:flex-row"
+        >
+          <img
+            src="assets/Fotos/logo-i.jpeg"
+            class="rounded-full w-24 absolute -translate-x-1/2 -translate-y-1/2 top-0 left-1/2 md:left-[16%] md:w-40 md:rounded-none md:border-4"
+          />
+          <div
+            class="flex flex-col gap-1 items-center md:items-start md:ml-[22%] md:-mt-[5%]"
+          >
+            <h1 class="font-extrabold text-gray-900 text-2xl">
+              La Belle Pâtisserie
+            </h1>
+            <div
+              class="items-center flex flex-col lg:flex lg:flex-row-reverse lg:gap-4"
+            >
+              <div class="flex gap-8">
+                <div class="flex gap-2">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <p>Matriz, Jacobina - BA</p>
+                </div>
+                <div>
+                  <a href="#"
+                    ><span class="font-bold">&bull; Mais informações</span></a
+                  >
+                </div>
+              </div>
+              <p>
+                <b class="text-[#008000]">Aberto até as 22:45</b>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bolo-brigadeiro.png"
-          alt="bolo de brigadeiro"
-        />
       </div>
+    </header>
 
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiros</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
+    <main class="mt-[39%] md:mt-[44%]">
+      <div
+        class="lg:flex lg:flex-col-reverse lg:gap-6 lg:w-[380px] lg:ml-[930px] lg:mt-[-110px]"
+      >
+        <div
+          class="bg-white relative -top-[25px] rounded-[10px] mx-3 border border-gray-300"
+        >
+          <div
+            class="flex flex-row justify-between border-b-[1px] border-dotted border-black p-2"
+          >
+            <div class="flex flex-row gap-2">
+              <i class="bi bi-question-diamond"></i>
+              <p><b>Calcular taxa de entrega</b></p>
+            </div>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+          <p class="p-2">
+            <b class="text-[#008000]">Entega grátis</b>
+            <b>em pedidos a partr de R$ 120,00</b>
           </p>
-          <p class="p preco"><b>R$ 59,90</b></p>
-        </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bolo-brigadeiro.png"
-          alt="bolo de brigadeiro"
-        />
-      </div>
 
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiros</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
+          <div
+            class="hidden lg:flex lg:flex-col lg:bg-[#f9fafb] lg:items-center lg:text-gray-700 lg:border-b-[1px] lg:border-dotted lg:border-black"
+          >
+            <i class="bi bi-cart4 text-[100px]"></i>
+
+            <span class="text-xl">Carrinho vazio</span>
+            <br />
+          </div>
+          <div
+            class="hidden lg:flex lg:flex-row lg:justify-between border-b-[1px] lg:border-dotted lg:border-black lg:p-2 lg:items-center"
+          >
+            <div class="lg:flex lg:items-center lg:gap-3">
+              <i class="bi bi-ticket-perforated lg:text-2xl"></i>
+              <div class="lg:flex lg:flex-col">
+                <p><b>Tem um cupom?</b></p>
+                <p>Clique e insira o código</p>
+              </div>
+            </div>
+            <i class="chevron bi bi-chevron-right"></i>
+          </div>
+
+          <button
+            class="hidden lg:inline lg:bg-[#ee4872] lg:m-2 lg:p-2 lg:w-[300px] rounded-[5px] lg:font-bold lg:text-white lg:ml-[25px]"
+          >
+            Sacola vazia
+          </button>
+        </div>
+
+        <div
+          class="bg-white mt-[-2.5%] p-2 mx-3 rounded-[10px] border border-gray-300 md:mt-[4%] md:mb-[4%]"
+        >
+          <div class="flex gap-2 items-center text-lg">
+            <i
+              style="background-color: #ee4872"
+              class="bi bi-gift rounded-[50%] p-1 w-[35px] text-center items-center text-white text-lg"
+            ></i>
+            <h4 class="font-extrabold text-slate-900">
+              Programa de fidelidade
+            </h4>
+          </div>
+          <p class="pt-2">
+            A cada <b>R$ 1,00</b> em compras você ganha <b>1 ponto</b> que pode
+            ser trocado por prêmios.
           </p>
-          <p class="p preco"><b>R$ 59,90</b></p>
-        </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bolo-brigadeiro.png"
-          alt="bolo de brigadeiro"
-        />
-      </div>
 
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiros</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
+          <p class="pt-1">
+            Os novos clientes ganham automaticamente <b>10 pontos.</b>
           </p>
-          <p class="p preco"><b>R$ 59,90</b></p>
         </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bolo-brigadeiro.png"
-          alt="bolo de brigadeiro"
-        />
       </div>
 
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiros</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <p class="p preco"><b>R$ 59,90</b></p>
+      <div
+        class="flex justify-between lg:w-[830px] lg:ml-[70px] lg:mt-[-490px]"
+      >
+        <div
+          class="flex gap-2 bg-white m-3 items-center p-2 font-bold rounded-[5px] border border-gray-300"
+        >
+          <p class="whitespace-nowrap">Lista de categorias</p>
+          <i class="bi bi-chevron-down"></i>
         </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bolo-brigadeiro.png"
-          alt="bolo de brigadeiro"
-        />
-      </div>
 
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiros</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <p class="p preco"><b>R$ 59,90</b></p>
+        <div
+          class="flex bg-white justify-center items-center px-2 px-6 m-3 rounded-[5px] text-xl border border-gray-300 lg:flex lg:flex-row lg:gap-4 lg:font-bold"
+        >
+          <i class="bi bi-search"></i>
+          <p class="hidden lg:inline lg:text-base">Busce por um produto</p>
         </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bolo-brigadeiro.png"
-          alt="bolo de brigadeiro"
-        />
       </div>
-    </div>
 
-    <h3 class="title-doces parte-bolos">Doces e salgados</h3>
-    <div class="doces-salgados mostrar-cardapio">
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiro Ninho</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <p class="p preco"><b>R$ 20,90</b></p>
+      <h3 class="font-extrabold text-xl text-slate-900 m-3 lg:m-8 lg:ml-[80px]">
+        Destaques
+      </h3>
+      <div class="overflow-x-scroll lg:ml-[60px]">
+        <div class="flex gap-2 ml-3 overflow-x-scroll w-fit">
+          <div
+            class="bg-white flex flex-col p-2 w-[160px] h-fit rounded-[10px] border border-gray-300 lg:w-[270px]"
+          >
+            <div>
+              <img
+                class="w-[100%] h-[110px] lg:h-[170px]"
+                src="assets/Fotos/pissaladiere.jpg"
+                alt=""
+              />
+
+              <h5 class="font-bold mt-1">Pissaladière</h5>
+              <p class="mt-1 line-clamp-3">
+                Torta parecida com uma pizza, coberta por cebolas carameladas,
+                aliche e azeitonas pretas.
+              </p>
+              <p class="mt-2"><b>R$ 21,90</b></p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white flex flex-col p-2 w-[160px] h-fit rounded-[10px] border border-gray-300 lg:w-[270px]"
+          >
+            <div>
+              <img
+                class="w-[100%] h-[110px] lg:h-[170px]"
+                src="assets/Fotos/croque.jpeg"
+                alt=""
+              />
+
+              <h5 class="font-bold mt-1">Croque-Monsieur</h5>
+              <p class="mt-1 line-clamp-3">
+                Pão de miga integral com grãos recheado com molho bechamel,
+                queijo e presunto e coberto com gruyère gratinado.
+              </p>
+              <p class="mt-2"><b>R$ 21,90</b></p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="bg-white flex flex-col p-2 w-[160px] h-fit rounded-[10px] border border-gray-300 lg:w-[270px]"
+            >
+              <img
+                class="w-[100%] h-[110px] lg:h-[170px]"
+                src="assets/Fotos/Eclair.jpeg"
+                alt=""
+              />
+
+              <h5 class="font-bold mt-1">Éclair</h5>
+              <p class="mt-1 line-clamp-3">
+                Doce caracterizado pelo formato longo, feito com massa de
+                farinha de trigo, com recheio cremoso (geralmente de natas ou
+                chocolate) e cobertura de calda de chocolate endurecida.
+              </p>
+              <p class="mt-2"><b>R$ 21,90</b></p>
+            </div>
+          </div>
         </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bombom-ninho.webp"
-          alt="bombom ninho"
-        />
       </div>
 
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiro Ninho</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <p class="p preco"><b>R$ 20,90</b></p>
+      <section>
+        <h3
+          class="font-extrabold text-xl m-3 mt-6 text-slate-900 lg:m-8 lg:ml-[70px]"
+        >
+          Salgados tradicionais
+        </h3>
+        <div class="lg:ml-[50px] lg:grid lg:grid-cols-2 lg:gap-1 lg:w-[870px]">
+          <div
+            class="bg-white flex flex-row gap-2 items-center m-3 p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p class="text-lg"><b>Quinche Lorraine</b></p>
+              <p class="line-clamp-3 mt-1">
+                Torta de queijo salgada coberta com uma mistura de nata e ovos,
+                toucinho pimenta do reino e noz moscada.
+              </p>
+              <p class="mt-2"><b>R$ 7,16 p/fatia</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[400px] h-[110px] rounded-[5px]"
+                src="assets/Fotos/quinche.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-white flex flex-row c gap-2 m-3 items-center p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p class="text-lg"><b>Croissant</b></p>
+              <p class="line-clamp-3 mt-1">
+                Pão de massa molhada em formato de meia-lua, feita com farinha
+                orgânica e manteiga específica. Ideal para acompanhar um café da
+                manhã especial ou um lanche da tarde, este croissant artesanal é
+                perfeito para qualquer ocasião.
+              </p>
+              <p class="mt-2"><b>R$ 4,19</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[300px] h-[110px] rounded-[5px]"
+                src="assets/Fotos/croissant.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-white flex flex-row c gap-2 m-3 items-center p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p class="text-lg"><b>Vol-Au-Vent</b></p>
+              <p class="line-clamp-3 mt-1">
+                Feita com massa folhada em formato de caixinhas que, depois de
+                assadas no forno, são recheadas com misturas cremosas.
+              </p>
+              <p class="mt-2"><b>R$ 9,69</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[300px] h-[110px] rounded-[5px]"
+                src="assets/Fotos/vol-au-vent.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="bg-white flex flex-row c gap-2 m-3 items-center p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p class="text-lg"><b>Soufflé de Queijo</b></p>
+              <p class="line-clamp-3 mt-1">
+                Conhecido pela sua leveza, o Soufflé de queijo é preparado com
+                bechamel de nata ou leite, com gemas de ovo, queijo de vaca
+                curado, queijo parmesão.
+              </p>
+              <p class="mt-2"><b>R$ 15,69</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[300px] h-[110px] rounded-[5px]"
+                src="assets/Fotos/souffle.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-white flex flex-row c gap-2 m-3 items-center p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p class="text-lg"><b>Tarte Flambée</b></p>
+              <p class="line-clamp-3 mt-1">
+                Massa de pão enrolada muito fina em forma de retângulo ou oval,
+                que é coberta com queijo branco ou crème fraîche, cebola em
+                rodelas finas e toucinho.
+              </p>
+              <p class="mt-2"><b>R$ 10,56</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[300px] h-[110px] rounded-[5px]"
+                src="assets/Fotos/tarte flambée.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-white flex flex-row c gap-2 m-3 items-center p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p class="text-lg"><b>Croque-Monsieur</b></p>
+              <p class="line-clamp-3 mt-1">
+                Pão de miga integral com grãos recheado com molho bechamel,
+                queijo e presunto e coberto com gruyère gratinado.
+              </p>
+              <p class="mt-2"><b>R$ 25,63</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[300px] h-[110px] rounded-[5px]"
+                src="assets/Fotos/croque.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-white flex flex-row c gap-2 m-3 items-center p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p class="text-lg"><b>Gougéres</b></p>
+              <p class="line-clamp-3 mt-1">
+                são pãezinhos de queijo franceses feitos com uma pâte à choux
+                salgada, 100% orgânicos.
+              </p>
+              <p class="mt-2"><b>R$ 16,36</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[300px] h-[110px] rounded-[5px]"
+                src="assets/Fotos/gougéres.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-white flex flex-row c gap-2 m-3 items-center p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p class="text-lg"><b>Pissaladière</b></p>
+              <p class="line-clamp-3 mt-1">
+                Torta parecida com uma pizza, coberta por cebolas carameladas,
+                aliche e azeitonas pretas.
+              </p>
+              <p class="mt-2"><b>R$ 36,69</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[300px] h-[110px] rounded-[5px]"
+                src="assets/Fotos/pissaladiere.jpg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bombom-ninho.webp"
-          alt="bombom ninho"
-        />
-      </div>
 
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiro Ninho</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <p class="p preco"><b>R$ 20,90</b></p>
+        <h3 class="font-extrabold text-xl m-3 mt-6 text-slate-900 lg:ml-[60px]">
+          Doces tradicionais
+        </h3>
+        <div class="lg:ml-[50px] lg:grid lg:grid-cols-2 lg:gap-1 lg:w-[870px]">
+          <div
+            class="bg-white flex flex-row gap-2 items-center m-3 p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p class="text-lg"><b>Éclair</b></p>
+              <p class="line-clamp-3 mt-1">
+                Doce caracterizado pelo formato longo, feito com massa de
+                farinha de trigo, com recheio cremoso (geralmente de natas ou
+                chocolate) e cobertura de calda de chocolate endurecida.
+              </p>
+              <p class="mt-2"><b>R$ 4,69</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[400px] h-[120px] rounded-[5px]"
+                src="assets/Fotos/Eclair.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-white flex flex-row c gap-2 m-3 items-center p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p><b>Macaron</b></p>
+              <p class="line-clamp-3 mt-1">
+                Pequeno biscoito, redondo e crocante, feito com farinha de
+                amêndoas, com base de claras, açúcar e recheado, granuloso e
+                molinho, de forma arredondada.
+              </p>
+              <p class="mt-2"><b>R$ 2,69</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[300px] h-[120px] rounded-[5px]"
+                src="assets/Fotos/macaron.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-white flex flex-row c gap-2 m-3 items-center p-2 rounded-[10px] border border-gray-300"
+          >
+            <div>
+              <p><b>Clafoutis</b></p>
+              <p class="line-clamp-3 mt-1">
+                Custard recheado com cerejas pretas selecionadas, assados numa
+                forma de ferro amanteigada.
+              </p>
+              <p class="mt-2"><b>R$ 42,55</b></p>
+            </div>
+            <div>
+              <img
+                class="w-[300px] h-[120px] rounded-[5px]"
+                src="assets/Fotos/Clafoutis.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bombom-ninho.webp"
-          alt="bombom ninho"
-        />
-      </div>
+      </section>
 
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiro Ninho</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <p class="p preco"><b>R$ 20,90</b></p>
+      <footer
+        class="bg-[#ee4872] text-white p-3 text-center text-base border border-gray-300 mt-14 md:p-5"
+      >
+        <p>Doces da Nina - 2024. Desenvolvido por Mirele Oliveira.</p>
+        <div>
+          <span>Rua da Matriz, Praça Castro Alves, 56,</span>
+          <span>Jacobina/Bahia | (74) 91538-2752</span>
         </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bombom-ninho.webp"
-          alt="bombom ninho"
-        />
-      </div>
+      </footer>
 
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiro Ninho</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <p class="p preco"><b>R$ 20,90</b></p>
+      <nav
+        class="flex flex-row border border-gray-300 bg-white justify-between p-3 text-lg lg:hidden"
+      >
+        <div class="botaoUm flex flex-col items-center">
+          <i class="bi bi-house-door-fill text-2xl"></i>
+          <a>Início</a>
         </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bombom-ninho.webp"
-          alt="bombom ninho"
-        />
-      </div>
 
-      <div class="cardapio">
-        <div class="descricao">
-          <p class="p"><b>Brigadeiro Ninho</b></p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <p class="p preco"><b>R$ 20,90</b></p>
+        <div class="botaoDois flex flex-col items-center">
+          <i class="bi bi-rocket-takeoff text-2xl"></i>
+          <a>Promoções</a>
         </div>
-        <div class="foto-doce"></div>
-        <img
-          class="cardapio-foto"
-          src="assets/Fotos/bombom-ninho.webp"
-          alt="bombom ninho"
-        />
-      </div>
-    </div>
 
-    <footer class="rodape">
-      <p class="pe">Doces da Nina - 2024. Desenvolvido por Mirele Oliveira.</p>
-      <div alinhar-rodape>
-        <span>Rua da Matriz, Praça Castro Alves, 56,</span>
-        <span>Jacobina/Bahia | (74) 91538-2752</span>
-      </div>
-    </footer>
+        <div class="botaoTres flex flex-col items-center">
+          <i class="bi bi-bag-check text-2xl"></i>
+          <a>Pedidos</a>
+        </div>
 
-    <nav class="menu">
-      <div class="icones">
-        <i id="tamanho" class="bi bi-house-door-fill"></i>
-        <a>Início</a>
-      </div>
-
-      <div class="icones">
-        <i id="tamanho" class="bi bi-rocket-takeoff"></i>
-        <a>Promoções</a>
-      </div>
-
-      <div class="icones">
-        <i id="tamanho" class="bi bi-bag-check"></i>
-        <a>Pedidos</a>
-      </div>
-
-      <div class="icones">
-        <i id="tamanho" class="bi bi-person"></i>
-        <a>Perfil</a>
-      </div>
-    </nav>
+        <div class="botaoQuatro flex flex-col items-center">
+          <i class="bi bi-person text-2xl"></i>
+          <a>Perfil</a>
+        </div>
+      </nav>
+    </main>
   </body>
 </html>
