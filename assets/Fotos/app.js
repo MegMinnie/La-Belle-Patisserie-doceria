@@ -3,7 +3,29 @@ const botaoDois = document.querySelector(".botaoDois");
 const botaoTres = document.querySelector(".botaoTres");
 const botaoQuatro = document.querySelector(".botaoQuatro");
 const botoesPc = document.querySelectorAll("#botao-pc");
+const periodo = document.querySelector(".periodo");
+const estabelecimento = document.querySelector("button");
 
+function horarioFuncionamento() {
+  let agora = new Date();
+  let hora = agora.getHours();
+  let msg1;
+  let msg2;
+
+  if (hora >= 8 && hora < 18) {
+    msg1 = "Aberto até as 18:00 horas";
+    msg2 = "Sacola vazia";
+  } else {
+    msg1 = "Fechado";
+    msg2 = "Estabelecimento fechado";
+    periodo.style.color = "red";
+  }
+
+  periodo.innerHTML = `${msg1}`;
+  estabelecimento.innerHTML = `${msg2}`;
+}
+
+horarioFuncionamento();
 window.addEventListener("DOMContentLoaded", function () {
   const primeiroBotao = botoesPc[0];
   if (primeiroBotao) {
