@@ -85,3 +85,23 @@ botaoQuatro.addEventListener("click", function apertar() {
 window.addEventListener("DOMContentLoaded", function () {
   botaoUm.style.color = "#ff005c";
 });
+
+const modalUm = document.querySelector("#modalUm");
+const pratoUm = document.querySelector("#pratoUm");
+const botaoFecharUm = document.querySelector("#botaoFecharUm");
+
+function abrirModal(modal) {
+  modal.showModal();
+}
+
+function fecharModal(modal) {
+  modal.close();
+}
+
+pratoUm.addEventListener("click", function () {
+  abrirModal(modalUm);
+});
+
+botaoFecharUm.addEventListener("click", function () {
+  fecharModal(modalUm);
+});
