@@ -86,6 +86,7 @@ window.addEventListener("DOMContentLoaded", function () {
   botaoUm.style.color = "#ff005c";
 });
 
+/*
 const modalUm = document.querySelector("#modalUm");
 const pratoUm = document.querySelector("#pratoUm");
 const botaoFecharUm = document.querySelector("#botaoFecharUm");
@@ -104,4 +105,4 @@ pratoUm.addEventListener("click", function () {
 
 botaoFecharUm.addEventListener("click", function () {
   fecharModal(modalUm);
-});
+});*/
