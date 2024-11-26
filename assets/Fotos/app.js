@@ -814,3 +814,111 @@ modal27.addEventListener("click", (e) => {
     body27.classList.remove("overflow-hidden");
   }
 });
+
+const modal28 = document.getElementById("modal-sem-dialog-vinte-oito");
+const abrirModalBtn28 = document.getElementById("pratoVinteOito");
+const fecharModalBtn28 = document.getElementById(
+  "botao-fechar-modal-sem-dialog-vinte-oito"
+);
+const body28 = document.body;
+
+// Abrir modal
+abrirModalBtn28.addEventListener("click", () => {
+  modal28.classList.remove("hidden");
+  body28.classList.add("overflow-hidden"); // Evita rolagem no fundo
+});
+
+// Fechar modal
+fecharModalBtn28.addEventListener("click", () => {
+  modal28.classList.add("hidden");
+  body28.classList.remove("overflow-hidden"); // Restaura rolagem no fundo
+});
+
+// Fechar modal clicando fora do conteúdo (se quiser)
+modal28.addEventListener("click", (e) => {
+  if (e.target === modal28) {
+    modal28.classList.add("hidden");
+    body28.classList.remove("overflow-hidden");
+  }
+});
+
+const modal29 = document.getElementById("modal-sem-dialog-vinte-nove");
+const abrirModalBtn29 = document.getElementById("pratoVinteNove");
+const fecharModalBtn29 = document.getElementById(
+  "botao-fechar-modal-sem-dialog-vinte-nove"
+);
+const body29 = document.body;
+
+// Abrir modal
+abrirModalBtn29.addEventListener("click", () => {
+  modal29.classList.remove("hidden");
+  body29.classList.add("overflow-hidden"); // Evita rolagem no fundo
+});
+
+// Fechar modal
+fecharModalBtn29.addEventListener("click", () => {
+  modal29.classList.add("hidden");
+  body29.classList.remove("overflow-hidden"); // Restaura rolagem no fundo
+});
+
+// Fechar modal clicando fora do conteúdo (se quiser)
+modal29.addEventListener("click", (e) => {
+  if (e.target === modal29) {
+    modal29.classList.add("hidden");
+    body29.classList.remove("overflow-hidden");
+  }
+});
+
+const modal30 = document.getElementById("modal-sem-dialog-trinta");
+const abrirModalBtn30 = document.getElementById("pratoTrinta");
+const fecharModalBtn30 = document.getElementById(
+  "botao-fechar-modal-sem-dialog-trinta"
+);
+const body30 = document.body;
+
+// Abrir modal
+abrirModalBtn30.addEventListener("click", () => {
+  modal30.classList.remove("hidden");
+  body30.classList.add("overflow-hidden"); // Evita rolagem no fundo
+});
+
+// Fechar modal
+fecharModalBtn30.addEventListener("click", () => {
+  modal30.classList.add("hidden");
+  body30.classList.remove("overflow-hidden"); // Restaura rolagem no fundo
+});
+
+// Fechar modal clicando fora do conteúdo (se quiser)
+modal30.addEventListener("click", (e) => {
+  if (e.target === modal30) {
+    modal30.classList.add("hidden");
+    body30.classList.remove("overflow-hidden");
+  }
+});
+
+const modal31 = document.getElementById("modal-sem-dialog-infor");
+const abrirModalBtn31 = document.getElementById("infor");
+const fecharModalBtn31 = document.getElementById(
+  "botao-fechar-modal-sem-dialog-infor"
+);
+const body31 = document.body;
+
+// Abrir modal
+abrirModalBtn31.addEventListener("click", () => {
+  modal31.classList.remove("hidden");
+  body31.classList.add("overflow-hidden"); // Evita rolagem no fundo
+});
+
+// Fechar modal
+fecharModalBtn31.addEventListener("click", () => {
+  modal31.classList.add("hidden");
+  body31.classList.remove("overflow-hidden"); // Restaura rolagem no fundo
+});
+
+// Fechar modal clicando fora do conteúdo (se quiser)
+modal31.addEventListener("click", (e) => {
+  if (e.target === modal31) {
+    modal31.classList.add("hidden");
+    body31.classList.remove("overflow-hidden");
+  }
+});
