@@ -23,16 +23,4 @@ Outra funcionalidade importante do site é o status de funcionamento do estabele
 <p>Acesse a aplicação por meio do link: <a href="https://megminnie.github.io/La-Belle-Patisserie-doceria/
 "_blank">clique aqui</a></p>
 
-## Screenshots
-**Versão desktop**
-![tela 1 ](fotos/tela1.png)
-<br>
-**Versão mobile**
-<br>
-![tela 2 ](fotos/tela2.png)
-<br><br> <br>
-![tela 3 ](fotos/tela3.png)
-
-</div>
-
 
