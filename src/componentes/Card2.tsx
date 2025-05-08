@@ -18,7 +18,7 @@ function Card2({ img2, titulo2, descricao2, preco2 }: Omit<Prato, "id">) {
                 </div>
                 <div className="w-[100%]">
                     <img
-                        className="img2 w-[100px] h-[110px] rounded-[5px]"
+                        className="img2 w-[100px] h-[100px]  rounded-[5px]"
                         src={img2}
                         alt="img"
                     />
