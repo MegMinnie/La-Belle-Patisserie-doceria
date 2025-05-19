@@ -1,6 +1,7 @@
 import Header from "./componentes/Header";
 import Card1 from "./componentes/Card1";
 import Card2 from "./componentes/Card2";
+import Footer from "./componentes/Footer";
 import capa from "./assets/capa.jpeg";
 import logo from "./assets/logo.jpeg";
 import prato6 from "./assets/prato6.jpeg";
@@ -27,66 +28,65 @@ function App() {
             <Header capa={capa} logo={logo} />
 
             <main className="mt-[39%] md:mt-[44%] mx-auto">
-                <div className=" lg:flex lg:flex-col lg:gap-6 lg:w-[380px]  mt-[160px]">
-                    <div className="bg-white relative -top-[25px] rounded-[10px] mx-3 border border-gray-300 lg:bg-scroll lg:bg-red-400 lg:self-end">
-                        <div className="flex flex-row justify-between border-b-[1px] border-dotted border-black p-2">
-                            <div className="flex flex-row gap-2 items-center">
-                                <BsQuestionDiamondFill />
-                                <p>
-                                    <b>Calcular taxa de entrega</b>
-                                </p>
-                            </div>
-                            <FaChevronRight />
-                        </div>
-                        <p className="p-2">
-                            <b className="text-[#008000]">Entrega grátis</b>
-                            <b> em pedidos a partir de R$ 120,00</b>
-                        </p>
-
-                        <div className="hidden lg:flex lg:flex-col lg:bg-[#f9fafb] lg:items-center lg:text-gray-700 lg:border-b-[1px] lg:border-dotted lg:border-black">
-                            <FaShoppingCart className="text-[100px]" />
-                            <span className="text-xl">Carrinho vazio</span>
-                            <br />
-                        </div>
-
-                        <div className="hidden lg:flex lg:flex-row lg:justify-between border-b-[1px] lg:border-dotted lg:border-black lg:p-2 lg:items-center">
-                            <div className="lg:flex lg:items-center lg:gap-3">
-                                <BsTicketPerforated className="lg:text-2xl" />
-                                <div className="lg:flex lg:flex-col">
+                <div className=" lg:flex lg:flex-col lg:gap-6   mt-[160px]">
+                    <div className="flex flex-col-reverse gap-4">
+                        <section className="bg-white relative -top-[25px] rounded-[10px] mx-3 border border-gray-300 lg:bg-scroll lg:left-[71%] lg:w-[27%] ">
+                            <div className="flex flex-row justify-between border-b-[1px] border-dotted border-black p-2">
+                                <div className="flex flex-row gap-2 items-center">
+                                    <BsQuestionDiamondFill />
                                     <p>
-                                        <b>Tem um cupom?</b>
+                                        <b>Calcular taxa de entrega</b>
                                     </p>
-                                    <p>Clique e insira o código</p>
                                 </div>
+                                <FaChevronRight />
                             </div>
-                            <FaChevronRight />
+                            <p className="p-2">
+                                <b className="text-[#008000]">Entrega grátis</b>
+                                <b> em pedidos a partir de R$ 120,00</b>
+                            </p>
+
+                            <div className="hidden lg:flex lg:flex-col lg:bg-[#f9fafb] lg:items-center lg:text-gray-700 lg:border-b-[1px] lg:border-dotted lg:border-black">
+                                <FaShoppingCart className="text-[100px]" />
+                                <span className="text-xl">Carrinho vazio</span>
+                                <br />
+                            </div>
+
+                            <div className="hidden lg:flex lg:flex-row lg:justify-between border-b-[1px] lg:border-dotted lg:border-black lg:p-2 lg:items-center">
+                                <div className="lg:flex lg:items-center lg:gap-3">
+                                    <BsTicketPerforated className="lg:text-2xl" />
+                                    <div className="lg:flex lg:flex-col">
+                                        <p>
+                                            <b>Tem um cupom?</b>
+                                        </p>
+                                        <p>Clique e insira o código</p>
+                                    </div>
+                                </div>
+                                <FaChevronRight />
+                            </div>
+
+                            <button className="hidden lg:inline lg:m-2 lg:p-2 lg:w-[300px] rounded-[5px] lg:font-bold lg:text-white lg:ml-[25px]">
+                                Sacola vazia
+                            </button>
+                        </section>
+
+                        <div className="bg-white mt-[-2.5%] p-2 mx-3 rounded-[10px] border border-gray-300 md:mt-[4%] md:mb-[4%] lg:w-[27%] lg:relative lg:left-[71%]">
+                            <div className="flex gap-2 items-center text-lg">
+                                <CiGift className="flex justify-center items-center rounded-[50%] w-[35px] h-[35px] text-white text-2xl bg-[#ee4872]" />
+                                <h4 className="font-extrabold text-slate-900">
+                                    Programa de fidelidade
+                                </h4>
+                            </div>
+                            <p className="pt-2">
+                                A cada <b>R$ 1,00</b> em compras você ganha{" "}
+                                <b>1 ponto</b> que pode ser trocado por prêmios.
+                            </p>
+                            <p className="pt-1">
+                                Os novos clientes ganham automaticamente{" "}
+                                <b>10 pontos.</b>
+                            </p>
                         </div>
-
-                        <button className="hidden lg:inline lg:bg-[#ee4872] lg:m-2 lg:p-2 lg:w-[300px] rounded-[5px] lg:font-bold lg:text-white lg:ml-[25px]">
-                            Sacola vazia
-                        </button>
                     </div>
-
-                    {}
-                    <div className="bg-white mt-[-2.5%] p-2 mx-3 rounded-[10px] border border-gray-300 md:mt-[4%] md:mb-[4%]">
-                        <div className="flex gap-2 items-center text-lg">
-                            <CiGift className="flex justify-center items-center rounded-[50%] w-[35px] h-[35px] text-white text-2xl bg-[#ee4872]" />
-                            <h4 className="font-extrabold text-slate-900">
-                                Programa de fidelidade
-                            </h4>
-                        </div>
-                        <p className="pt-2">
-                            A cada <b>R$ 1,00</b> em compras você ganha{" "}
-                            <b>1 ponto</b> que pode ser trocado por prêmios.
-                        </p>
-                        <p className="pt-1">
-                            Os novos clientes ganham automaticamente{" "}
-                            <b>10 pontos.</b>
-                        </p>
-                    </div>
-
-                    {/* Lista de categorias e busca */}
-                    <div className="flex justify-between lg:w-[830px] lg:ml-[70px] lg:mt-[-490px]">
+                    <div className="flex justify-between lg:w-[60%] lg:ml-[70px] lg:mt-[-47%]">
                         <div className="flex gap-2 bg-white m-3 items-center p-2 font-bold rounded-[5px] border border-gray-300">
                             <p className="whitespace-nowrap">
                                 Lista de categorias
@@ -104,8 +104,8 @@ function App() {
                     <h3 className="font-extrabold text-xl text-slate-900 m-3 lg:m-8 lg:ml-[80px]">
                         Destaques
                     </h3>
-                    <div className="overflow-x-scroll lg:ml-[60px]">
-                        <div className="flex gap-2 ml-3 overflow-x-scroll w-fit">
+                    <div className="overflow-x-scroll lg:overflow-hidden lg:ml-[3%]">
+                        <div className="flex gap-2 ml-3 overflow-x-scroll lg:overflow-hidden w-fit">
                             <Card1
                                 img1={prato8}
                                 titulo1="Pissaladière"
@@ -223,6 +223,7 @@ function App() {
                     </section>
                 </div>
             </main>
+            <Footer />
         </>
     );
 }

@@ -36,7 +36,7 @@ function Header({ capa, logo }: IHeader) {
                     <div className="flex flex-col items-center gap-1 p-5 rounded-[20px] absolute -translate-y-1/2 top-[112%] w-full bg-white pt-[50px] border border-gray-300 md:mt-[2%] md:bg-transparent md:border-none md:flex-row">
                         <img
                             src={logo}
-                            className="rounded-full w-24 absolute -translate-x-1/2 -translate-y-1/2 top-0 left-1/2 md:left-[16%] md:w-40 md:rounded-none md:border-4"
+                            className="rounded-full w-24 absolute -translate-x-1/2 -translate-y-1/2 top-0 left-1/2 md:left-[16%] md:w-40 md:rounded-none md:border-4 lg:border-white"
                         />
                         <div className="flex flex-col gap-1 items-center md:items-start md:ml-[22%] md:-mt-[5%]">
                             <h1 className="font-extrabold text-gray-900 text-2xl">

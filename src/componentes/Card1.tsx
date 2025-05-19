@@ -10,7 +10,7 @@ function Card({ img1, titulo1, descricao1, preco1 }: ICard1) {
         <>
             <div
                 id="pratoVinteOito"
-                className="bg-white flex flex-col p-2 w-[160px] h-fit rounded-[10px] border border-gray-300 lg:w-[270px]"
+                className="bg-white flex flex-col p-2 w-[160px] h-fit rounded-[10px] border border-gray-300 lg:w-[270px] lg:h-[320px]"
             >
                 <div>
                     <img
