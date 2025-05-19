@@ -2,6 +2,7 @@ import Header from "./componentes/Header";
 import Card1 from "./componentes/Card1";
 import Card2 from "./componentes/Card2";
 import Footer from "./componentes/Footer";
+import Cabecalho from "./componentes/Cabecalho";
 import capa from "./assets/capa.jpeg";
 import logo from "./assets/logo.jpeg";
 import prato6 from "./assets/prato6.jpeg";
@@ -224,6 +225,7 @@ function App() {
                 </div>
             </main>
             <Footer />
+            <Cabecalho />
         </>
     );
 }

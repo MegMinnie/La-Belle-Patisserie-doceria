@@ -1,3 +1,7 @@
+import { FaHouse } from "react-icons/fa6";
+import { IoRocketOutline } from "react-icons/io5";
+import { IoBagCheckOutline } from "react-icons/io5";
+import { IoPerson } from "react-icons/io5";
 interface IHeader {
     capa: string;
     logo: string;
@@ -10,19 +14,28 @@ function Header({ capa, logo }: IHeader) {
                 <nav className="hidden lg:flex md:absolute md:w-full">
                     <ul className="bg-[#ee4872] flex justify-around p-4 text-xl font-bold text-white mx-auto w-full pb-[160px]">
                         <li className="botao-pc flex gap-3 items-center border border-transparent hover:cursor-pointer hover:border-white">
-                            <i className="bi bi-house-door-fill text-2xl"></i>
+                            <i className="text-2xl">
+                                <FaHouse />
+                            </i>
                             <a href="#">Início</a>
                         </li>
                         <li className="botao-pc flex gap-3 items-center border border-transparent hover:cursor-pointer hover:border-white">
-                            <i className="bi bi-rocket-takeoff text-2xl"></i>
+                            <i className="text-2xl">
+                                {" "}
+                                <IoRocketOutline />
+                            </i>
                             <a href="#">Promoções</a>
                         </li>
                         <li className="botao-pc flex gap-3 items-center border border-transparent hover:cursor-pointer hover:border-white">
-                            <i className="bi bi-bag-check text-2xl"></i>
+                            <i className="text-2xl">
+                                <IoBagCheckOutline />
+                            </i>
                             <a href="#">Pedidos</a>
                         </li>
                         <li className="botao-pc flex gap-3 items-center border border-transparent hover:cursor-pointer hover:border-white">
-                            <i className="bi bi-person text-2xl"></i>
+                            <i className="text-2xl">
+                                <IoPerson />
+                            </i>
                             <a href="#">Entrar/Cadastrar</a>
                         </li>
                     </ul>
